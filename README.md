@@ -1,1 +1,1 @@
-# physicshackathon
+# asteroid_diameter_calculator
