@@ -1,4 +1,4 @@
-full_name,a,e,G,i,om,w,q,ad,per_y,data_arc,condition_code,n_obs_used,H,diameter,extent,albedo,rot_per,GM,BV,UB,IR,spec_B,spec_T,neo,pha,moid
+asteroid_name,semi-major_axis,eccentricity,magnitude_slope_parameter,inclination,longitude,perihelion_argument,perihelion_distance,aphelian_distance,orbital_period,data_arc,condition_code,n_obs_used,absolute_magnitude,diameter,extent,albedo,rotation_period,gravitational_parameter,colour_index_BV,colour_index_UB,colour_index_IR,spectral_B,spectral_T,near_earth,hazardous,intersection_distance
      1 Ceres,2.769165155,0.076009029,0.12,10.59406704,80.30553157,73.59769412,2.5586836,2.979646709,4.608201802,8822,0,1002,3.34,939.4,964.4 x 964.2 x 891.8,0.09,9.07417,62.6284,0.713,0.426,,C,G,N,N,1.59478
      2 Pallas,2.772465922,0.230336821,0.11,34.83623442,173.0800627,310.0488574,2.133864935,3.411066909,4.616443528,72318,0,8490,4.13,545,582x556x500,0.101,7.8132,14.3,0.635,0.284,,B,B,N,N,1.23324
      3 Juno,2.669149517,0.25694232,0.32,12.98891913,169.8527598,248.1386262,1.983332047,3.354966987,4.360813923,72684,0,7104,5.33,246.596,,0.214,7.21,,0.824,0.433,,Sk,S,N,N,1.03454
