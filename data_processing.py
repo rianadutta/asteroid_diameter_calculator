@@ -6,17 +6,18 @@ from scipy import stats
 df = pd.read_csv('processed.csv')
 
 # drop unnecessary columns
-df.drop(labels="index", axis=1, inplace=True)
+df.drop(labels=["index","pha"], axis=1, inplace=True)
 
 # replace Y/N with 1/0
 df['neo'] = df['neo'].map({'Y': 1, 'N': 0})
-df['pha'] = df['pha'].map({'Y': 1, 'N': 0})
 
 # type cast data
 df = df.astype(float)
 
-# remove outliars
-df=df[(np.abs(stats.zscore(df)) < 3).all(axis=1)]
+# remove outliers
+for column in df:
+    if column not in ["orbit_condition_code","neo"]:
+        df=df[(np.abs(stats.zscore(df[column])) < 3)]
 
 # normalize data
 def min_max_scaling(column):
