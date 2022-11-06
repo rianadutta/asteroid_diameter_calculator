@@ -1,8 +1,4 @@
 import pandas as pd
-from sklearn.neural_network import MLPRegressor
-from sklearn import metrics
-import matplotlib.pyplot as plt
-import numpy as np
 
 # import data
 df = pd.read_csv('processed.csv')
