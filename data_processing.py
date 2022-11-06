@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+from scipy import stats
 
 # import data
 df = pd.read_csv('processed.csv')
@@ -12,6 +14,9 @@ df['pha'] = df['pha'].map({'Y': 1, 'N': 0})
 
 # type cast data
 df = df.astype(float)
+
+# remove outliars
+df=df[(np.abs(stats.zscore(df)) < 3).all(axis=1)]
 
 # normalize data
 def min_max_scaling(column):
